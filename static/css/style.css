@@ -4,6 +4,76 @@
     box-sizing: border-box;
 }
 
-.nav-container {
-    
+/* Variables */
+:root {
+    /* Negro */
+    --black: #000;
+    /* Piel */
+    --skin: #efe1cc;
+    /* Piel claro */
+    --skin-light: #f5ebdc;
+    /* Piel */
+    --skin: #bba37e;
+    /* Marrón morado */
+    --brown-purple: #502314;
+    /* Rojo */
+    --red: #d63955;
+    /* Rojo oscuro */
+    --dark-red: #a71b00;
+    /* Blanco */
+    --white: #fff;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: "Cabin", sans-serif;
+    color: var(--brown-purple);
+    background-color: var(--skin-light);
+}
+
+/* Barra de navegación */
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.underline {
+    box-shadow: 0px 0px 0.6px var(--black);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--brown-purple);
+}
+
+#btn-inscribir {
+    background-color: var(--red);
+    border: none;
+    font-family: "Cabin", sans-serif;
+    font-size: 18px;
+    color: var(--white);
+    padding: 5px;
+    transition: background-color 0.2s;
+}
+
+#btn-inscribir:hover {
+    background-color: var(--dark-red);
+    transition: background-color 0.2s;
+}
+
+.bi-list {
+    font-size: 20px;
+}
+
+.nav-left img {
+    max-width: 60px;
 }

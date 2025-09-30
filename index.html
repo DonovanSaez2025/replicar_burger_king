@@ -21,9 +21,13 @@
 </head>
 
 <body>
+    <!-- Barra de navegación -->
     <nav>
+        <!-- Contenedor de la barra de navegación -->
         <div class="nav-container">
-            <div class="nav-row underline">
+            <!-- Fila 1 de la barra de navegación-->
+            <div class="nav-row">
+                <!-- Parte izquierda de la barra de navegación-->
                 <div class="nav-left">
                     <a href="#"><i class="bi bi-list"></i></a>
                     <a href="#">Pide aquí</a>
@@ -34,20 +38,33 @@
                     <a href="#"><img src="./static/images/burgericon.png"></a>
                 </div>
 
+                <!-- Parte derecha de la barra de navegación-->
                 <div class="nav-right">
                     <button id="btn-inscribir">Incribirse</button>
-                    <button id="btn-carrito"><i class="bi bi-handbag-fill"></i> $ <span>0</span></button>
+                    <button id="btn-carrito"><i class="bi bi-handbag-fill"></i> $<span id="carrito">0</span></button>
                 </div>
             </div>
 
-            <div class="nav-row">
-                <button><i class="bi bi-globe"></i> <span>ES</span></button>
+            <!-- Fila 2 de la barra de navegación-->
+            <div class="nav-row lang-row">
+                <button class="lang-button"><i class="bi bi-globe"></i> <span>ES</span></button>
             </div>
         </div>
     </nav>
 
-    <div class="">
+    <!-- Contenedor -->
+    <div class="container">
+        <!-- Fila 1 -->
+        <div class="row">
+            <div class="mibk">
+                <div class="mibk-izq">
+                    <img src="./static/images/mibk.png" alt="Mi Burger King">
+                    <p>¡Bienvenido! Puedes ganar coronas con cada compra y utilizarlas para canjear recompensas.</p>
+                </div>
 
+                <button class="mibk-der"><i class="bi bi-info-circle-fill"></i> Detalles</button>
+            </div>
+        </div>
     </div>
 </body>
 

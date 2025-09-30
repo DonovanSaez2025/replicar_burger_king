@@ -6,62 +6,99 @@
 
 /* Variables */
 :root {
-    /* Negro */
-    --black: #000;
-    /* Piel */
-    --skin: #efe1cc;
-    /* Piel claro */
-    --skin-light: #f5ebdc;
+    /* Blanco */
+    --white: #fff;
+    /* Piel más clara */
+    --skin-lighter: #f5ebdc;
+    /* Piel clara */
+    --skin-light: #efe1cc;
     /* Piel */
     --skin: #bba37e;
-    /* Marrón morado */
-    --brown-purple: #502314;
+    /* Piel un poco más oscura */
+    --skin-semidark: #9f816f;
     /* Rojo */
     --red: #d63955;
     /* Rojo oscuro */
     --dark-red: #a71b00;
-    /* Blanco */
-    --white: #fff;
+    /* Marrón morado */
+    --brown-purple: #502314;
+    /* Negro */
+    --black: #000;
 }
 
 /* Cuerpo de la página */
 body {
     font-family: "Cabin", sans-serif;
     color: var(--brown-purple);
-    background-color: var(--skin-light);
+    background-color: var(--skin-lighter);
 }
 
-/* Barra de navegación */
+/* Convertir el cursor a puntero al pasar encima de todos los botones */
+button {
+    font-family: "Cabin", sans-serif;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+/* Filas de la barra de navegación */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .nav-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
-}
-
-.underline {
+    padding: 5px 30px 3px 30px;
     box-shadow: 0px 0px 0.8px var(--black);
+    background-color: var(--skin-lighter);
 }
 
+/* Barra de navegación parte izquierda */
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 20px;
 }
 
 .nav-left a {
     text-decoration: none;
     font-size: 20px;
+    font-weight: bolder;
     color: var(--brown-purple);
+}
+
+.nav-left a:hover {
+    color: var(--red);
+}
+
+.nav-left img {
+    max-width: 60px;
+}
+
+/* Barra de navegación parte derecha */
+.nav-right button {
+    margin-left: 15px;
 }
 
 #btn-inscribir {
     background-color: var(--red);
     border: none;
-    font-family: "Cabin", sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     color: var(--white);
-    padding: 5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+}
+
+#btn-carrito {
+    background-color: var(--brown-purple);
+    color: var(--skin-light);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 20px;
     transition: background-color 0.2s;
 }
 
@@ -70,10 +107,60 @@ body {
     transition: background-color 0.2s;
 }
 
-.bi-list {
-    font-size: 20px;
+/* Barra de navegación abajo */
+.lang-row {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.nav-left img {
-    max-width: 60px;
+.lang-button {
+    border: none;
+    background: none;
+    color: var(--skin-semidark);
+    padding: 3px 0px;
+}
+
+.bi-globe {
+    font-size: 16px;
+}
+
+/* Mi BK */
+.mibk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 112px;
+    background-color: var(--brown-purple);
+    padding: 0 15px 20px 15px;
+    box-shadow: 0px 1px 5px var(--black);
+}
+
+.mibk-izq p {
+    color: var(--white);
+    font-weight: bolder;
+}
+
+.mibk-izq img {
+    margin-top: 35px;
+    max-width: 209px;
+}
+
+.mibk-der {
+    display: flex;
+    align-content: center;
+    gap: 12px;
+    border-radius: 20px;
+    border: 1px solid var(--skin-lighter);
+    background-color: var(--brown-purple);
+    color: var(--white);
+    font-size: 14px;
+    padding: 3px 20px 3px 5px;
+}
+
+.mibk-der:hover {
+    background-color: var(--skin-light)
+}
+
+.bi-info-circle-fill {
+    font-size: 19px;
 }

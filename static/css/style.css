@@ -33,11 +33,12 @@ body {
     background-color: var(--skin-lighter);
 }
 
-/* Convertir el cursor a puntero al pasar encima de todos los botones */
+/* Propiedades de todos los botones */
 button {
     font-family: "Cabin", sans-serif;
     cursor: pointer;
     font-weight: bolder;
+    transition: background-color 0.2s;
 }
 
 /* Filas de la barra de navegación */
@@ -90,7 +91,6 @@ nav {
     color: var(--white);
     padding: 5px 12px;
     border-radius: 20px;
-    transition: background-color 0.2s;
 }
 
 #btn-carrito {
@@ -99,12 +99,10 @@ nav {
     border: none;
     padding: 8px 30px;
     border-radius: 20px;
-    transition: background-color 0.2s;
 }
 
 #btn-inscribir:hover {
     background-color: var(--dark-red);
-    transition: background-color 0.2s;
 }
 
 /* Barra de navegación abajo */
@@ -118,6 +116,7 @@ nav {
     background: none;
     color: var(--skin-semidark);
     padding: 3px 0px;
+    margin-right: 12px;
 }
 
 .bi-globe {
@@ -125,42 +124,29 @@ nav {
 }
 
 /* Mi BK */
+.container {
+    margin-top: 110px;
+}
+
 .mibk {
+    background-color: var(--brown-purple)
+}
+
+.mibk-col1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 112px;
-    background-color: var(--brown-purple);
-    padding: 0 15px 20px 15px;
-    box-shadow: 0px 1px 5px var(--black);
+    padding: 39px 24px 0 24px;
 }
 
-.mibk-izq p {
-    color: var(--white);
-    font-weight: bolder;
+.mibk-col1 img {
+    max-width: 220px;
 }
 
-.mibk-izq img {
-    margin-top: 35px;
-    max-width: 209px;
-}
-
-.mibk-der {
-    display: flex;
-    align-content: center;
-    gap: 12px;
-    border-radius: 20px;
+.mibk-col1 button {
     border: 1px solid var(--skin-lighter);
+    border-radius: 20px;
     background-color: var(--brown-purple);
     color: var(--white);
-    font-size: 14px;
-    padding: 3px 20px 3px 5px;
-}
-
-.mibk-der:hover {
-    background-color: var(--skin-light)
-}
-
-.bi-info-circle-fill {
-    font-size: 19px;
+    padding: 5px 10px;
 }

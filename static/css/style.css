@@ -12,6 +12,8 @@
     --skin-lighter: #f5ebdc;
     /* Piel clara */
     --skin-light: #efe1cc;
+    /* Piel Rosacea */
+    --skin-pink: #f0cdbb;
     /* Piel */
     --skin: #bba37e;
     /* Piel un poco más oscura */
@@ -129,24 +131,73 @@ nav {
 }
 
 .mibk {
-    background-color: var(--brown-purple)
+    background-color: var(--brown-purple);
+    box-shadow: 0px -3px 17px #000000;
 }
 
 .mibk-col1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
     padding: 39px 24px 0 24px;
 }
 
 .mibk-col1 img {
-    max-width: 220px;
+    max-width: 208px;
 }
 
 .mibk-col1 button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     border: 1px solid var(--skin-lighter);
     border-radius: 20px;
     background-color: var(--brown-purple);
     color: var(--white);
-    padding: 5px 10px;
+    padding: 3px 18px 3px 7px;
+    font-size: 15px;
+}
+
+.mibk-col1 button:hover {
+    background-color: var(--skin-pink);
+}
+
+.bi-info-circle-fill {
+    font-size: 19px;
+}
+
+.mibk-col2 {
+    color: var(--white);
+    padding: 1px 24px 20px 24px;
+    font-weight: bold;
+}
+
+/* Tarjetas */
+.card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    background-color: var(--white);
+    max-width: 550px;
+}
+
+.card-img img {
+    max-width: 550px;
+}
+
+.card-text {
+    max-width: 380px;
+}
+
+.card-text h2 {
+    font-size: 20px;
+}
+
+.card-text p {
+    font-size: 14px;
+}
+
+.card button {
+    align-self: flex-end;
 }

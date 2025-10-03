@@ -200,4 +200,5 @@ nav {
 
 .card button {
     align-self: flex-end;
+    border: 1px solid var(--red);
 }

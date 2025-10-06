@@ -8,6 +8,8 @@
 :root {
     /* Blanco */
     --white: #fff;
+    /* Rojo claro */
+    --light-red: #fbe9e5;
     /* Piel más clara */
     --skin-lighter: #f5ebdc;
     /* Piel clara */
@@ -39,7 +41,7 @@ body {
 button {
     font-family: "Cabin", sans-serif;
     cursor: pointer;
-    font-weight: bolder;
+    font-weight: bold;
     transition: background-color 0.2s;
 }
 
@@ -133,6 +135,7 @@ nav {
 .mibk {
     background-color: var(--brown-purple);
     box-shadow: 0px -3px 17px #000000;
+    margin-bottom: 125px;
 }
 
 .mibk-col1 {
@@ -180,25 +183,40 @@ nav {
     align-items: flex-start;
     background-color: var(--white);
     max-width: 550px;
+    border-radius: 10px;
 }
 
 .card-img img {
     max-width: 550px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-text {
     max-width: 380px;
+    padding: 7px 0 0 15px;
 }
 
 .card-text h2 {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .card-text p {
+    margin-top: 4px;
     font-size: 14px;
 }
 
 .card button {
     align-self: flex-end;
     border: 1px solid var(--red);
+    background-color: var(--white);
+    color: var(--red);
+    font-size: 19px;
+    padding: 12px 15px;
+    margin: 0 18px 17px 0;
+    border-radius: 24px;
+}
+
+.card button:hover {
+    background-color: var(--light-red);
 }

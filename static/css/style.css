@@ -129,7 +129,7 @@ nav {
 
 /* Mi BK */
 .container {
-    margin-top: 110px;
+    margin: 110px auto 0 auto;
 }
 
 .mibk {
@@ -177,6 +177,14 @@ nav {
 }
 
 /* Tarjetas */
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 1116px;
+    margin: 0 auto;
+}
+
 .card {
     display: flex;
     flex-flow: column wrap;
@@ -219,4 +227,41 @@ nav {
 
 .card button:hover {
     background-color: var(--light-red);
+}
+
+.title-long {
+    font-size: 16px !important;
+}
+
+.text-long {
+    font-size: 12px !important;
+}
+
+/* Sección para descargar la App */
+.background-phone {
+    display: flex;
+    align-items: center;
+    background-color: var(--skin-light);
+}
+
+.background-phone img {
+    max-width: 420px;
+}
+
+.texto-imagenes {
+    max-width: 528px;
+}
+
+.texto-imagenes h3 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.texto-imagenes button {
+    border: none;
+}
+
+.texto-imagenes img {
+    max-width: 120px;
+    border-radius: 6px;
 }

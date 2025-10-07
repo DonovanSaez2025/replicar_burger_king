@@ -240,11 +240,15 @@ nav {
 /* Sección para descargar la App */
 .background-phone {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 0 0 0;
+    margin-top: 210px;
     background-color: var(--skin-light);
 }
 
 .background-phone img {
+    margin-top: 75px;
     max-width: 420px;
 }
 
@@ -253,7 +257,8 @@ nav {
 }
 
 .texto-imagenes h3 {
-    font-size: 60px;
+    font-size: 54px;
+    -webkit-text-stroke: var(--brown-purple) 3px;
     font-weight: bold;
 }
 

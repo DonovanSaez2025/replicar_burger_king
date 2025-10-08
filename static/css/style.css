@@ -278,7 +278,7 @@ nav {
 /* Pié de página */
 footer {
     background-color: var(--darkest-brown);
-    padding: 109px;
+    padding: 109px 0  55px 0;
 }
 
 .foot-container {
@@ -304,7 +304,67 @@ footer {
 }
 
 /* Otros */
+.foot-others {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px auto 0 auto;
+    padding-bottom: 91px;
+    border-bottom: 1px solid var(--skin-semidark);
+}
+
+/* Redes sociales */
+.foot-social {
+    flex: 2;
+}
+
 .foot-social h4 {
     color: var(--skin-lighter);
     font-size: 27px;
+}
+
+.social-links {
+    display: flex;
+    gap: 14px;
+    margin-top: 4px;
+}
+
+.social-links .bi {
+    color: var(--skin-lighter);
+    font-size: 24px;
+    transition: color 0.2s
+}
+
+.social-links .bi:hover {
+    color: var(--dark-red);
+    transition: color 0.2s
+}
+
+/* Copyright */
+.copyright {
+    max-width: 200px;
+    flex: 2;
+}
+
+.copyright p {
+    font-size: 13px;
+    color: var(--skin-semidark);
+}
+
+/* Botón ES */
+.lang-button-down {
+    font-size: 15px;
+    color: var(--skin-lighter);
+    flex: 1;
+}
+
+/* Cookies */
+.foot-cookies {
+    margin-top: 20px;
+}
+
+.foot-cookies button {
+    border: none;
+    background: none;
+    color: var(--skin-lighter);
+    font-size: 16px;
 }

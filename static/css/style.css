@@ -18,14 +18,18 @@
     --skin-pink: #f0cdbb;
     /* Piel */
     --skin: #bba37e;
-    /* Piel un poco más oscura */
-    --skin-semidark: #9f816f;
+    /* Piel casi oscura */
+    --skin-semidark: #bba391;
+    /* Piel oscura */
+    --skin-dark: #9f816f;
     /* Rojo */
     --red: #d63955;
     /* Rojo oscuro */
     --dark-red: #a71b00;
     /* Marrón morado */
     --brown-purple: #502314;
+    /* Marrón más oscuro */
+    --darkest-brown: #2b0200;
     /* Negro */
     --black: #000;
 }
@@ -118,7 +122,7 @@ nav {
 .lang-button {
     border: none;
     background: none;
-    color: var(--skin-semidark);
+    color: var(--skin-dark);
     padding: 3px 0px;
     margin-right: 12px;
 }
@@ -269,4 +273,31 @@ nav {
 .texto-imagenes img {
     max-width: 120px;
     border-radius: 6px;
+}
+
+/* Pié de página */
+footer {
+    background-color: var(--darkest-brown);
+    padding: 109px;
+}
+
+.foot-container {
+    max-width: 1116px;
+    margin: 0 auto;
+}
+
+.foot-links {
+    padding-bottom: 58px;
+    border-bottom: 1px solid var(--skin-semidark);
+}
+
+.foot-links li {
+    margin-bottom: 6px;
+}
+
+.foot-links a {
+    color: var(--skin-semidark);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
 }

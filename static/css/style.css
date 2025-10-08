@@ -286,6 +286,7 @@ footer {
     margin: 0 auto;
 }
 
+/* Enlaces externos */
 .foot-links {
     padding-bottom: 58px;
     border-bottom: 1px solid var(--skin-semidark);
@@ -300,4 +301,10 @@ footer {
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
+}
+
+/* Otros */
+.foot-social h4 {
+    color: var(--skin-lighter);
+    font-size: 27px;
 }

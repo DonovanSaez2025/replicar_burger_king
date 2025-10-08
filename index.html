@@ -48,7 +48,7 @@
 
             <!-- Fila 2 de la barra de navegación-->
             <div class="nav-row lang-row">
-                <button class="lang-button"><i class="bi bi-globe"></i> <span>ES</span></button>
+                <button class="lang-button"><i class="bi bi-globe"></i> ES</button>
             </div>
         </div>
     </nav>
@@ -60,7 +60,7 @@
             <div class="mibk">
                 <div class="mibk-col1">
                     <img src="./static/images/mibk.png" alt="Mi Burger King">
-                    <button><i class="bi bi-info-circle-fill"></i> Detalles</button>
+                    <button onclick="detalles()"><i class="bi bi-info-circle-fill"></i> Detalles</button>
                 </div>
 
                 <p class="mibk-col2">¡Bienvenido! Puedes ganar coronas con cada compra y utilizarlas para canjear
@@ -117,7 +117,7 @@
                             próximamente en la app. Relaja esas manitos de guagua.</p>
                     </div>
 
-                    <button>Ya lo probaste?</button>
+                    <button onclick="pedido()">Ya lo probaste?</button>
                 </article>
 
                 <!-- Tarjeta 4 -->
@@ -132,7 +132,7 @@
                             Además, con cada compra acumulas coronitas para canjear por distintos productos.</p>
                     </div>
 
-                    <button>Descarga aquí</button>
+                    <button onclick="descApp()">Descarga aquí</button>
                 </article>
 
                 <!-- Tarjeta 5 -->
@@ -151,7 +151,7 @@
                             tentación queso-amorosa hoy mismo.</p>
                     </div>
 
-                    <button>Ver más</button>
+                    <button onclick="pedido()">Ver más</button>
                 </article>
             </main>
         </div>
@@ -166,8 +166,8 @@
                         Cupones y ofertas!</h3>
 
                     <div class="image-botones">
-                        <img src="./static/images/appstore.png" alt="Descarga en App Store">
-                        <img src="./static/images/playstore.png" alt="Descarga en Play Store" class="store">
+                        <img src="./static/images/appstore.png" alt="Descarga en App Store" onclick="appStore()">
+                        <img src="./static/images/playstore.png" alt="Descarga en Play Store" class="store" onclick="playStore()">
                     </div>
 
                     <p class="disclaimer">Apple y el logotipo de Apple son marcas comerciales de Apple Inc., registradas
@@ -201,10 +201,10 @@
                             <h4>Redes sociales</h4>
 
                             <div class="social-links">
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-youtube"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.instagram.com/burgerking_chile/?hl=es" target="_blank"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.facebook.com/BurgerKingChile/?locale=es_LA" target="_blank"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.youtube.com/user/ChileBurgerKing" target="_blank"><i class="bi bi-youtube"></i></a>
+                                <a href="https://cl.linkedin.com/company/burger-king-chile" target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
 

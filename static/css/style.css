@@ -275,6 +275,10 @@ nav {
     border-radius: 6px;
 }
 
+.image-botones img {
+    cursor: pointer;
+}
+
 /* Pié de página */
 footer {
     background-color: var(--darkest-brown);
